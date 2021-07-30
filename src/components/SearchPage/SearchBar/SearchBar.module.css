@@ -1,0 +1,7 @@
+.bar {
+  background-color: darkgrey;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+}
