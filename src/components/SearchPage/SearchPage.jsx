@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import request from 'superagent';
+import CharacterList from './CharacterList/CharacterList';
 
 export default class SearchPage extends Component {
   state = {
@@ -13,9 +14,10 @@ export default class SearchPage extends Component {
     this.setState({ characterState: data.body});
   }
   render() {
+    const { characterState } = this.state;
     return (
       <div>
-        Hello World
+        <CharacterList data={characterState}/>
       </div>
     )
   }
